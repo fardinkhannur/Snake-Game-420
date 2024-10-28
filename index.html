@@ -1,29 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Snake Game</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Snake Game</title>
+    <link href="../Facebookfounder/5.jpg" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div id="game-container">
-    <canvas id="gc" class="game-canvas" width="400" height="400"></canvas>
-  </div>
-  <div class="keys">
-    <a class="up arr" onclick="Snake.action('up')">
-      <i class="chevron up"></i></a>
-    <br />
-    <a class="left arr" onclick="Snake.action('left')">
-      <i class="chevron left"></i></a>
-    <a class="down arr" onclick="Snake.action('down')">
-      <i class="chevron down"></i></a>
-    <a class="right arr" onclick="Snake.action('right')">
-      <i class="chevron right"></i></a>
-  </div>
-  <script type="text/javascript" src="game.js"></script>
+    <div id="game-container">
+        <canvas id="gc" class="game-canvas" width="400" height="400"></canvas>
+    </div>
+    <div class="keys">
+        <a class="up arr" onclick="Snake.action('up')"><i class="chevron up"></i></a>
+        <br />
+        <a class="left arr" onclick="Snake.action('left')"><i class="chevron left"></i></a>
+        <a class="down arr" onclick="Snake.action('down')"><i class="chevron down"></i></a>
+        <a class="right arr" onclick="Snake.action('right')"><i class="chevron right"></i></a>
+    </div>
+    
+    <audio id="eat-sound" src="sounds/eat.mp3" preload="auto"></audio>
+    <audio id="game-over-sound" src="sounds/game-over.mp3" preload="auto"></audio>
+    <audio id="background-music" src="sounds/background.mp3" preload="auto" loop></audio>
+    
+    <script type="text/javascript" src="game.js"></script>
 </body>
 
 </html>
